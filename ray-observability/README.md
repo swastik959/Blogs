@@ -218,13 +218,6 @@ To set up CPU profiling:
 1. Install `gdb` or `lldb` in the ray worker pod.
 2. Use profiling scripts or tools to capture CPU usage snapshots during inference tasks.
 
-**Example Commands:**
-
-```bash
-apt-get update && apt-get install -y gdb
-py-spy top --pid <worker-pid>
-```
-
 **Example Use Case:**
 
 - Identifying CPU-bound operations in pre-processing pipelines to offload them to GPUs or optimize their implementation.
